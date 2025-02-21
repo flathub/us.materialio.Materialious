@@ -22,14 +22,14 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/Materialious/Materialious/releases/download/1.6.25/Materialious-1.6.25-linux-x64.zip
-        sha256: 05aa2abb923fa3e8869d0ab7c9ba70933e8dcf3ce995ec4cb18d6da0bd209b02
+        url: https://github.com/Materialious/Materialious/releases/download/1.7.14/Materialious-1.7.14-linux-x64.zip
+        sha256: 324aa5bca272a3d4dbe20bc28f55524e34a078ac648815cbe4a63e610623ba0d
         dest-filename: Materialious.zip
       - type: file
         only-arches:
           - aarch64
-        url: https://github.com/Materialious/Materialious/releases/download/1.6.25/Materialious-1.6.25-linux-arm64.zip
-        sha256: 3be9edb79cb2c1c15f7939e0d0bbfcb597aceb39d1f5811234f2feaca3bc8f10
+        url: https://github.com/Materialious/Materialious/releases/download/1.7.14/Materialious-1.7.14-linux-arm64.zip
+        sha256: b11dab6b5a2bc3d1045903c1ef250923136c50d39b5b862d5e27860dbcd0b5b9
         dest-filename: Materialious.zip
       # Icon
       - type: file
