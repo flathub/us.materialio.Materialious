@@ -44,7 +44,7 @@ modules:
         sha256: e95067d9342a2268106d3f7a238d9f377615dd2ef19d4388d37c093b838ad116
         dest-filename: us.materialio.Materialious.desktop
       - type: file
-        url: https://raw.githubusercontent.com/Materialious/Materialious/a7a92f5569a4d963eb45a0fde37a932b392720db/materialious/electron/materialious.metainfo.xml
+        url: https://raw.githubusercontent.com/Materialious/Materialious/main/materialious/electron/materialious.metainfo.xml
         sha256: 456e81f76a4db0fe36d27a0df138f4d876b7a97ee6b450f595f23b92fbd0298a
         dest-filename: us.materialio.Materialious.metainfo.xml
     build-commands:
