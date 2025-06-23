@@ -45,7 +45,7 @@ modules:
         dest-filename: us.materialio.Materialious.desktop
       - type: file
         url: https://raw.githubusercontent.com/Materialious/Materialious/main/materialious/electron/materialious.metainfo.xml
-        sha256: ce3bc3cf24717b6727d31c32e7748527acd3b32af2babfdbcaa516b2c588e5a6
+        sha256: 2ac661e1a497c68017ed6caa0887d8ddbb5caae9dbd4f35ebe0663b824cf23e6
         dest-filename: us.materialio.Materialious.metainfo.xml
     build-commands:
       # Bundle app
