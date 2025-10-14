@@ -56,3 +56,4 @@ modules:
       - install -Dm644 us.materialio.Materialious.svg /app/share/icons/hicolor/scalable/apps/us.materialio.Materialious.svg
       - install -Dm644 us.materialio.Materialious.desktop -t /app/share/applications/
       - install -Dm644 us.materialio.Materialious.metainfo.xml -t /app/share/metainfo/
+      - patch-desktop-filename "${FLATPAK_DEST}"/materialious/resources/app.asar
