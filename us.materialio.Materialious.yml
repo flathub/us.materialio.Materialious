@@ -12,6 +12,8 @@ finish-args:
   - --socket=pulseaudio
   - --share=network
   - --device=dri
+  - --socket=wayland
+  - --socket=session-bus
   - --own-name=org.mpris.MediaPlayer2.chromium.*
   - --talk-name=org.freedesktop.PowerManagement
   - --talk-name=org.freedesktop.ScreenSaver
