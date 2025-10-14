@@ -1,17 +1,18 @@
 app-id: us.materialio.Materialious
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 base: org.electronjs.Electron2.BaseApp
-base-version: "24.08"
+base-version: '25.08'
 command: run.sh
 separate-locales: false
 finish-args:
   - --share=ipc
-  - --socket=x11
   - --socket=pulseaudio
   - --share=network
   - --device=dri
+  - --socket=wayland
+  - --socket=fallback-x11
   - --own-name=org.mpris.MediaPlayer2.chromium.*
   - --talk-name=org.freedesktop.PowerManagement
   - --talk-name=org.freedesktop.ScreenSaver
@@ -22,14 +23,14 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/Materialious/Materialious/releases/download/1.10.14/Materialious-linux-x64.zip
-        sha256: 872551c355c958d75106b99529cb30193de988a4d837eb58a20b9cb6501aeb3a
+        url: https://github.com/Materialious/Materialious/releases/download/1.10.15/Materialious-linux-x64.zip
+        sha256: 3147f6a7f439af068a4084afe076a0a626cd3aaf431226e72858601483df440a
         dest-filename: Materialious.zip
       - type: file
         only-arches:
           - aarch64
-        url: https://github.com/Materialious/Materialious/releases/download/1.10.14/Materialious-linux-arm64.zip
-        sha256: 4a24fe2e09136fa3bd0b6f4beb016ac7ac7f05f476f647a64f086f3813fc97ab
+        url: https://github.com/Materialious/Materialious/releases/download/1.10.15/Materialious-linux-arm64.zip
+        sha256: 2e407d3c4da131b8f3f2a5d064a608486b31e539e5b0c5495be76f0377a060fd
         dest-filename: Materialious.zip
       # Icon
       - type: file
@@ -45,7 +46,7 @@ modules:
         dest-filename: us.materialio.Materialious.desktop
       - type: file
         url: https://raw.githubusercontent.com/Materialious/Materialious/main/materialious/electron/materialious.metainfo.xml
-        sha256: 040637d1e5c05e78b1becda1acbbacd0f8d39f271fae002b09bea6fe475e14a6
+        sha256: ab0271e9f0d170d225ce5e1d9eab5332fdeb60a15225fc9544d6b5d809975e68
         dest-filename: us.materialio.Materialious.metainfo.xml
     build-commands:
       # Bundle app
@@ -56,3 +57,4 @@ modules:
       - install -Dm644 us.materialio.Materialious.svg /app/share/icons/hicolor/scalable/apps/us.materialio.Materialious.svg
       - install -Dm644 us.materialio.Materialious.desktop -t /app/share/applications/
       - install -Dm644 us.materialio.Materialious.metainfo.xml -t /app/share/metainfo/
+      - patch-desktop-filename "${FLATPAK_DEST}"/materialious/resources/app.asar
