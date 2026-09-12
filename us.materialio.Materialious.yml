@@ -34,8 +34,8 @@ modules:
         dest-filename: Materialious.zip
       # Icon
       - type: file
-        url: https://raw.githubusercontent.com/Materialious/Materialious/bb002aae39af50713975dc6ee9f3645a19760cb6/branding/Meterialious.svg
-        sha256: 6b09ee6750d7b94a56f85ef68ceea4e8e79a5d408e587a0a2195fa151fe37ea2
+        url: https://raw.githubusercontent.com/Materialious/Materialious/44ffbe2da77a2ab3d6a15e2638b629c128137b2d/branding/MaterialiousAppIcon.svg
+        sha256: 4d8dbecdcfbd66335f63be9db191663be4d6a86d39f2eae4ddf9f895f105423c
         dest-filename: us.materialio.Materialious.svg
       # Wrapper to launch the app
       - type: file
