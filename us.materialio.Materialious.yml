@@ -23,14 +23,14 @@ modules:
       - type: file
         only-arches:
           - x86_64
-        url: https://github.com/Materialious/Materialious/releases/download/1.18.14/Materialious-linux-x64.zip
-        sha256: 8a934df82536dbda718ddf8d62d74e71b534b710e7846a3167cf82291778aa62
+        url: https://github.com/Materialious/Materialious/releases/download/1.18.15/Materialious-linux-x64.zip
+        sha256: 09e6e64575410977e06e45362dc3016c2258c4ccbbeed3f5325be211d73149eb
         dest-filename: Materialious.zip
       - type: file
         only-arches:
           - aarch64
-        url: https://github.com/Materialious/Materialious/releases/download/1.18.14/Materialious-linux-arm64.zip
-        sha256: 8909e3bed772f2eb61efe36ba89e8b285af338fba73d95dff97a0f071a46b84e
+        url: https://github.com/Materialious/Materialious/releases/download/1.18.15/Materialious-linux-arm64.zip
+        sha256: 39ea0170f5fb5214e6c009da3f3d64b7005af0789591ba61231eabab844439d4
         dest-filename: Materialious.zip
       # Icon
       - type: file
@@ -45,8 +45,8 @@ modules:
         sha256: e95067d9342a2268106d3f7a238d9f377615dd2ef19d4388d37c093b838ad116
         dest-filename: us.materialio.Materialious.desktop
       - type: file
-        url: https://raw.githubusercontent.com/Materialious/Materialious/1.18.14/materialious/electron/materialious.metainfo.xml
-        sha256: d6e645d21d3dd875dc6f16c84010a61f322bc788121e804cf5ca8e803b6614b9
+        url: https://raw.githubusercontent.com/Materialious/Materialious/1.18.15/materialious/electron/materialious.metainfo.xml
+        sha256: 01c8c1e4c3af4a2beff42e8bf45b50a05d0cc2191a7c93f883af65397e9e37a7
         dest-filename: us.materialio.Materialious.metainfo.xml
     build-commands:
       # Bundle app
